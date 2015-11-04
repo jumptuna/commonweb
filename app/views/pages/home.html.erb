@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<style>
+	html {
+    height: 100%;
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    }
+	.home {
+	border-style: solid;
+	border-width: .25em;
+	border-color: black;
+	border-radius: 1em;
+	/*background-color: red;*/
+	text-align: center;
+	padding: 3em 0em 3em 0em;
+	
+
+	}
+	.box {
+	height: 100%;
+	width: 100%;
+	
+	}
+</style>
+</head>
+
+<html>
+<body>
+<div class = "box">
+	<div class = "col-sm-2 home">
+		<%= link_to 'Sign Up', new_user_path %>
+		<p></p>
+		<%= link_to 'List of Users', users_path %>
+		<p></p>
+		<%= link_to 'Login', "login" %>
+		<p></p>
+		<%= link_to 'Template', "profpage" %>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

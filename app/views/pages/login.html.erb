@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+</head>
+<html>
+<body>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Username:") %>
+  <%= text_field_tag(:q) %>
+  <p></p>
+  <%= label_tag(:l, "Password:") %>
+  <%= text_field_tag(:l) %>
+  <%= submit_tag("Login") %>
+<% end %>
+</body>
+</html>
+
+

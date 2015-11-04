@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <style>
+    
+    html {
+    height: 100%;
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 100%;
+    }
+    a {
+    padding: 2em 2em;
+    background-color: red;
+    
+    }
+
+    .name { 
+    height: .8953em;
+    width: 33.76em;
+    padding-left: 11.2899em;
+    padding-top: .446875em;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 11pt;
+    }
+
+    .wherefrom { 
+    height: .8953em;
+    width: 33.76em;
+    padding-left: 18.23em;
+    padding-top: 1.01562em;
+    opacity: .7;
+    font-family: Arial;
+    }
+    .picture {  
+    height: 11em;
+    width: 11em;
+    margin-top: 1.12031em;
+    margin-left: 2.9em;
+    background-image: url(http://www.referralsaasquatch.com/assets/Outdoor-Square-Profile-Derek.jpg);
+    background-size: 100% 100%;
+    z-index: 99999;
+    border-radius: 3.5%;
+    border-style: solid;
+    border-color: grey;
+    border-width: .1em;
+    position: absolute;
+    }
+    .ncorner {
+    height: 4.48em;
+    width: 100%; 
+    top: 0em; 
+    opacity: .875;
+    background-image: url(https://archtilestone.files.wordpress.com/2011/11/cremo-delicatto-edited.jpg);
+    border-radius: .5%;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    z-index: 3;
+    }
+    .outershell {
+    height: 100%; 
+    width: 100%; 
+    background-image: url(/Users/Matt/Desktop/ch_1.jpg); 
+    background-size: 100% 100%;
+    }
+    .shell { 
+    height: 44.8688em;
+    width: 67.55em;
+    background-color: white;
+    vertical-align: middle;
+    margin-left: 14.475em;
+    margin-top: 3.20469em;
+    border-radius: .5%;
+    border-style: solid;
+    border-color: grey;
+    border-width: .1em;
+    margin-left: auto;
+    margin-right: auto;
+      
+    }
+    .leftcolumn {
+    background-color: white;
+    height:40.3812em;
+
+    
+    }
+    .rightcolumn {
+    background-color: white;
+    height:40.3812em;
+    }
+    .listofpeople1 {
+    height: 1.21094em;
+    width: 8.44375em;
+    margin: 0 auto;
+    margin-top: 7.2875em;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    border-top-style: solid;
+    border-top-color: grey;
+    border-top-width: .1em;
+    text-align: center;
+    font-size: 8pt;
+    font-family: Arial;
+    opacity: .7;
+    }
+
+    .listofpeople2 {
+    height: 1.21094em;
+    width: 8.44375em;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    text-align: center;
+    font-size: 8pt;
+    font-family: Arial; 
+    opacity: .7;
+    }
+
+    .listofpeople3 {
+    height: 1.21094em;
+    width: 8.44375em;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    text-align: center;
+    font-size: 8pt;
+    font-family: Arial;
+    opacity: .7;
+    margin: 0 auto;
+    }
+
+    .listofpeople4 {
+    height: 1.21094em;
+    width: 8.44375em;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    text-align: center;
+    font-size: 8pt;
+    font-family: Arial;
+    opacity: .7;
+    margin: 0 auto;
+    }
+    .biocolumn{
+    background-color: white;
+    height: 40.3812em;
+    }
+    .infocolumn{
+    background-color: white;
+    height: 40.3812em;
+    }
+    .bio1 {
+    height: 1.61406em;
+    width: 6.5859em;
+    
+    margin-top: 2.01875em;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    text-align: right;
+    opacity: .7;
+    font-family: Arial;
+    font-size: 9pt;
+    
+
+    
+    }
+    .bio2 {
+    height: 1.61406em;
+    width: 6.5859em;
+    
+    margin-top: 18.1703em;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    text-align: right;
+    opacity: .7;
+    font-family: Arial;
+    font-size: 9pt;
+    
+    }
+    .info1 {
+    height: 12.1141em;
+    width: 25.4625em;
+    /*padding-left: 3.5em;
+    padding-top: 2.01875em;*/
+    margin-top: 2.01875em;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    font-size: 9pt;
+    opacity: .7;
+    font-family: Arial;
+    
+    
+
+  }
+
+  .info2 {
+    height: 12.1141em;
+    width: 25.4625em;
+    margin-top: 7.87495em;
+    
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .1em;
+    font-size: 9pt;
+    opacity: .7;
+    font-family: Arial;
+    
+  }
+
+  </style>
+</head>
+<body>  
+  <div class = "outershell">
+
+    <div class = "shell">
+      <div class = "picture">
+      </div>
+
+      <div class ="ncorner">
+          <div class = "name">
+            <%= @name %>
+          </div>
+          <div class = "wherefrom">
+            <%= @email %>
+          </div>
+        </div>
+
+      <div class = "col-sm-3 leftcolumn">
+        
+
+      </div>
+
+      <div class = "col-sm-9 rightcolumn">
+        <div class = "col-sm-3 biocolumn">
+          <div class = "bio1"> 
+
+          Bio
+
+          </div>
+
+           <div class = "bio2">
+
+
+           </div>
+        </div>
+
+        <div class = "col-sm-9 infocolumn">
+          <div class = "info1"> 
+
+                
+          </div>
+
+          <div class = "info2">
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
+            
