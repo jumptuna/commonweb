@@ -6,18 +6,10 @@ class LoginController < ActionController::Base
     User.find_each(:batch_size => 1) do |u|
       
       if (u.name == params[:q] && u.password == params[:l])
-          
-          @name = u.name
-          @email = u.email
-
-          render file: '/Users/Matt/projects/commonweb/app/views/pages/profilepage.html.erb' and return
-              
-          break
+          return redirect_to profile_page_path(u.id)
       end
     end
-    render file: '/Users/Matt/projects/commonweb/app/views/pages/login.html.erb'
-
-
+    redirect_to login_path
   end
   
 

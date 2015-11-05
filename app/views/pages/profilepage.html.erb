@@ -220,6 +220,15 @@
     font-family: Arial;
     
   }
+  .lou {
+    text-align: center;
+    margin-top: 10em;
+  }
+  .button {
+    padding: 0em;
+    background-color: white;
+
+  }
 
   </style>
 </head>
@@ -240,8 +249,15 @@
         </div>
 
       <div class = "col-sm-3 leftcolumn">
-        
+            <div class = "lou">
+                <% @users.each do |user| %>
+                <tr>
 
+                <td class = "links"><%= link_to user.name, view_user_path(user.name), :class => 'button'  %></td>
+                <p></p>
+                </tr>
+                <% end %>
+            </div>
       </div>
 
       <div class = "col-sm-9 rightcolumn">
@@ -265,7 +281,7 @@
           </div>
 
           <div class = "info2">
-            
+            <% @ip %>
 
           </div>
         </div>

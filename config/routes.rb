@@ -7,12 +7,15 @@ Rails.application.routes.draw do
 
   # get "signup" => "home#new"
 
-  root "home#update"
+  root "pages#home"
   
   resources :users
-  get "profpage" => "pages#profilepage"
+  get "profpage/(:id)" => "pages#profilepage", as: "profile_page"
   get "login" => "pages#login"
   get "search" => "login#search"
+  resources :home
+
+  get "viewuser/(:name)" => "home#view", as: "view_user"
 
   resources :pages
 

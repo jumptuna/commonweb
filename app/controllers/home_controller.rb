@@ -1,9 +1,7 @@
 class HomeController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  def update
-  	render file: "/Users/Matt/projects/commonweb/app/views/pages/home.html.erb"
-  end
+ 
   # def profile
   # 	render file: "/Users/Matt/projects/commonweb/app/views/pages/profilepage.html"
   # end
@@ -14,10 +12,18 @@ class HomeController < ActionController::Base
   # 	render template: "/users/new.html.erb"
   # end
 
-  def profile
-  	render file: "/Users/Matt/projects/commonweb/app/views/pages/profilepage.html.erb"
-  end
+  
   def login
+  end
+#for clicking on list names in profilepage and showing other user's info
+  def view
+    User.find_each(:batch_size => 1) do |k|
+      
+      if (k.name == params[:name])
+          return redirect_to profile_page_path(k.id)
+      end
+    end
+    
   end
   
   protect_from_forgery with: :exception
