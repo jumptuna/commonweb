@@ -1,24 +1,49 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	html {
+	height: 100%;
+	}
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+	body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	}
+	.box {
+	
+	}
+</style>
+</head>
+<body>
 
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
+<div class = "col-sm-6-offset-6 box">
+		<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+		<p>
+		  <strong>Name:</strong>
+		  <%= @user.name %>
+		</p>
 
-<p>
-  <strong>Phonenumber:</strong>
-  <%= @user.phonenumber %>
-</p>
+		<p>
+		  <strong>Password:</strong>
+		  <%= @user.password %>
+		</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+		<p>
+		  <strong>Email:</strong>
+		  <%= @user.email %>
+		</p>
+
+		<p>
+		  <strong>Phonenumber:</strong>
+		  <%= @user.phonenumber %>
+		</p>
+
+		<%= link_to 'Edit', edit_user_path(@user) %> |
+		<%= link_to 'Back', users_path %>
+</div>
+
+</body>
+</html>
