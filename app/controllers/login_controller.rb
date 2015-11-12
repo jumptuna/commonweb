@@ -2,6 +2,7 @@ class LoginController < ActionController::Base
   @name = ""
   @email = ""
   def search
+
     
     User.find_each(:batch_size => 1) do |u|
       
@@ -11,6 +12,7 @@ class LoginController < ActionController::Base
     end
     redirect_to login_path
   end
+  
   
 
   

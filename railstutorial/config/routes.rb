@@ -1,28 +1,4 @@
 Rails.application.routes.draw do
-  
-
-  devise_for :users
-  # get "template" => "home#profile"
-
-  # get "listofusers" => "home#list"
-
-  # get "signup" => "home#new"
-
-
-  
-  resources :users
-  get "log" => "devise#new", as: "new_devise"
-  get "profpage/(:id)" => "pages#profilepage", as: "profile_page"
-  get "login" => "pages#login"
-  get "search" => "login#search"
-  resources :home
-
-  get "viewuser/(:name)" => "home#view", as: "view_user"
-
-  root to: "pages#home" # redirect for devise after password update sign in etc. (customizable look into)
-
-  resources :pages
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

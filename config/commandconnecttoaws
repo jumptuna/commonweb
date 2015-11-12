@@ -1,0 +1,1 @@
+ssh -i ~/.ssh/common.pem ec2-user@ec2-52-91-110-82.compute-1.amazonaws.com
